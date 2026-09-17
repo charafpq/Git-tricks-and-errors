@@ -1,0 +1,14 @@
+// create env
+python -m venv name
+
+
+// activate env
+
+.\venv\Scripts\activate
+
+
+
+
+// create requirements.tx
+
+pip freeze > requirements.txt
