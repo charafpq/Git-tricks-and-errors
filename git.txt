@@ -34,6 +34,11 @@ git commit -m "Add test.py"
 git push
 
 
+// to add all files 
+git add .
+git commit -m "Add te.py and second file"
+git push
+
 
 
 // To remove test.py from both your local folder and your GitHub repository, run:
