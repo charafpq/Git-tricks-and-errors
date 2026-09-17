@@ -23,6 +23,9 @@ git push -u origin main
 
 
 
+// if it lags
+Ctrl + C to go out
+
 
 
 
@@ -33,7 +36,14 @@ git add test.py
 git commit -m "Add test.py"
 git push
 
+// to add all files 
+git add .
+git commit -m "Add te.py and second file"
+git push
 
+
+//check lasts adds if added correctly
+git status
 
 
 // To remove test.py from both your local folder and your GitHub repository, run:
