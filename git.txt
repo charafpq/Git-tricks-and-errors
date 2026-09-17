@@ -1,0 +1,100 @@
+//create reposo for first ime 
+$ echo "# flask-and-json" >> README.md
+
+git init
+
+git add README.md
+
+git commit -m "first commit"
+
+git branch -M main
+
+git remote add origin https://github.com/charafpq/flask-and-json.git
+
+git push -u origin main
+
+
+
+
+// go back to repos
+git remote add origin https://github.com/charafpq/flask-and-json.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+// adding files 
+
+git add test.py
+git commit -m "Add test.py"
+git push
+
+
+
+
+// To remove test.py from both your local folder and your GitHub repository, run:
+
+
+git rm test.py
+git commit -m "Remove test.py"
+git push
+
+
+
+//If you want to keep test.py on your local computer but remove it from GitHub, run:
+
+git rm --cached test.py
+git commit -m "Remove test.py from remote repository"
+git push 
+
+
+
+//Viewing Commit History
+//To view your project's commit history, run:
+
+git log --oneline
+Going Back in Time
+
+
+
+
+//Temporarily Inspect an Older Version (Safe Read-Only Mode)
+
+
+
+
+//To view your code as it was at a specific commit without deleting anything:
+Bash
+
+git checkout <commit-hash>
+
+[[[]]][][][] To return to your latest code afterward, run: git switch main
+
+
+Permanently Undo Recent Commits (Keep Changes in Workspace)
+
+//To remove recent commits from Git history but keep all modified files intact on your computer:
+
+git reset --soft <commit-hash>
+
+
+
+
+//Permanently Delete Commits and Files (Destructive Reset)
+
+To completely throw away all commits and local file changes after a specific point:
+Bash
+
+git reset --hard <commit-hash>
+
+
+
+Syncing Changes with GitHub After a Reset
+
+If you reset your local history (using --soft or --hard) and want to overwrite the remote history on GitHub:
+
+git push origin main --force
