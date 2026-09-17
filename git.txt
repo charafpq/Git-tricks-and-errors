@@ -22,7 +22,8 @@ git branch -M main
 git push -u origin main
 
 
-
+// if it lags
+Ctrl + C to go out
 
 
 
@@ -38,6 +39,10 @@ git push
 git add .
 git commit -m "Add te.py and second file"
 git push
+
+
+//check lasts adds if added correctly
+git status
 
 
 
