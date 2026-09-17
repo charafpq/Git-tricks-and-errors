@@ -22,8 +22,7 @@ git branch -M main
 git push -u origin main
 
 
-// if it lags
-Ctrl + C to go out
+
 
 
 
@@ -34,15 +33,6 @@ git add test.py
 git commit -m "Add test.py"
 git push
 
-
-// to add all files 
-git add .
-git commit -m "Add te.py and second file"
-git push
-
-
-//check lasts adds if added correctly
-git status
 
 
 
@@ -108,3 +98,40 @@ Syncing Changes with GitHub After a Reset
 If you reset your local history (using --soft or --hard) and want to overwrite the remote history on GitHub:
 
 git push origin main --force
+
+
+
+
+
+
+//Create a branch
+
+
+git branch <branch-name>
+
+// u have to push the brach to be added
+git push -u origin <branch-name>
+
+
+// Switch between existing branches
+
+git switch <branch-name>
+
+
+//List all branches
+
+git branch          # Local branches
+git branch -a       # Local and remote branches
+
+
+
+//Delete a branch locally
+
+
+git branch -d <branch-name>        # Safe delete (only if merged)
+git branch -D <branch-name>        # Force delete (unmerged changes)
+
+
+//Delete a branch from GitHub (remote)
+
+git push origin --delete <branch-name>
